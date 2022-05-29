@@ -7,11 +7,11 @@
    --header-section-bg-color: #2F303A;
    --accent-footer-text-color: rgba(255, 255, 255, 0.6);
    --section-team-bg-color: #F5F4FA;
+   --color-bg-button: #188CE8;
 }
 
 body {
     font-family: Roboto, sans-serif;
-    background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
     
@@ -47,7 +47,7 @@ body {
     color: var(--accent-text-color);
 }
 
-.link.current {
+.site-nav .link.current {
     color: var(--accent-text-color);
 }
 
@@ -98,16 +98,13 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
-    color: var(--accent-text-color);
+    background-color: var(--color-bg-button);
 }
 
 /* -----------------------------------------Benefits */
@@ -152,6 +149,10 @@ body {
     background-color: var(--header-section-bg-color);
 }
 
+.logo-secondary {
+    color: var(--accent-header-name-color);
+}
+
 .footer-text {
     font-style: normal;
     font-size: 14px;
@@ -187,7 +188,8 @@ body {
 .button-primary:focus,
 .button-secondary:hover,
 .button-secondary:focus {
-    color: var(--accent-text-color);
+    background-color: var(--accent-text-color);
+    color: var(--accent-header-name-color);
 }
 
 
@@ -196,7 +198,6 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    text-align: center;
     color: var(--accent-header-name-color);
     background-color: var(--accent-text-color);
     cursor: pointer;
